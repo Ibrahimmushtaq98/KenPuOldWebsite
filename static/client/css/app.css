@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+body a {
+  color: #0D7FA4;
+}
+body a:visited {
+  color: #6297A9;
+}
+div.main-layout {
+  font-size: 14pt;
+}
+div.main-layout.read-mode.phone-portrait {
+  font-size: 12pt;
+}
+div.main-layout.read-mode.phone-landscape {
+  margin-left: 40px;
+  font-size: 12pt;
+}
+div.main-layout.read-mode.desktop,
+div.main-layout.read-mode.wide {
+  margin-left: 100px;
+}
+div.main-layout.read-mode.show-index {
+  margin-left: 300px;
+}
+div.main-layout.print-mode {
+  max-width: 1024px;
+}
+div.table-of-content-opener {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 3;
+}
+div.table-of-content-opener button {
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+div.bookie-tools {
+  position: fixed;
+  top: 5;
+  right: 5;
+  z-index: 3;
+}
+div.bookie-tools select {
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 4px;
+  font-size: 12pt;
+  font-family: ETBembo;
+}
+@page {
+  size: letter;
+  margin: 2.5em;
+  margin-right: 10em;
+}
+div.bookie-navstack {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+div.bookie-navstack .-parts {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.bookie-navstack .-parts .-part a {
+  display: inline-block;
+  text-align: center;
+  min-width: 30px;
+  padding: 3px;
+  background: transparent;
+  border-radius: 5px;
+  color: black;
+}
+div.bookie-navstack .-parts .-part a:hover {
+  background: #333;
+  color: white;
+}
+div.bookie-navstack .-parts .-part ::after {
+  content: "/";
+}
+div.table-of-content {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  background: #eee;
+  font-size: 10pt;
+  font-family: Roboto;
+  font-weight: 300;
+  overflow-y: auto;
+}
+div.table-of-content a.close-table-of-content {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: teal;
+}
+div.table-of-content a.close-table-of-content:hover {
+  background: teal;
+  color: white;
+}
+div.table-of-content > .tree-node {
+  margin-right: 30px;
+}
+div.table-of-content ul {
+  list-style: none;
+  padding-left: 10;
+  margin: 0;
+  border-left: thin solid #aaa;
+}
+div.table-of-content div.tree-node {
+  position: relative;
+}
+div.table-of-content div.tree-node a.tree-node-name {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #888;
+}
+div.table-of-content div.tree-node a.tree-node-name span.status {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: -8px;
+  left: -3px;
+}
+div.table-of-content div.tree-node a.tree-node-name span.status.draft {
+  background: crimson;
+}
+div.table-of-content div.tree-node a.tree-node-name span.status.done {
+  background: teal;
+}
+div.table-of-content div.tree-node a.tree-node-name span.status.text {
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+  font-size: 9px;
+  padding: 3px;
+  font-weight: bold;
+  font-family: "Helvetica";
+  background: #333;
+  color: white;
+}
+div.table-of-content div.tree-node a.selected {
+  background: #ddd;
+}
+div.table-of-content div.tree-node a.category-section {
+  font-weight: bold;
+  font-size: 120%;
+}
+div.table-of-content div.tree-node a.category-course {
+  font-weight: bold;
+  font-size: 110%;
+}
+div.table-of-content div.tree-node a.is-local {
+  color: SteelBlue;
+}
+div.table-of-content div.tree-node div.tree-node-label:hover a.tree-node-pin {
+  opacity: 1.0;
+}
+div.summary {
+  max-width: 600px;
+  padding: 10px;
+  margin: 40px 0;
+}
+div.summary img {
+  width: 100%;
+}
+div.summary div.summary-image {
+  margin-bottom: 15px;
+}
+div.summary div.summary-body {
+  flex: 2;
+}
+div.summary div.summary-body > a.title {
+  display: block;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14pt;
+  border-bottom: 5px solid #ccc;
+  padding-bottom: 10px;
+}
+div.summary div.summary-body > .doc {
+  font-size: 12pt;
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+}

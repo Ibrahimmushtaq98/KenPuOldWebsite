@@ -1,0 +1,601 @@
+div.doc {
+  /* Bootstrap-like styling */
+  line-height: 1.5em;
+  font-family: ETBembo;
+}
+div.doc p,
+div.doc pre,
+div.doc blockquote,
+div.doc li {
+  margin: 0 0 0.5em 0;
+}
+div.doc pre {
+  line-height: 1.0em;
+  font-size: 0.9em;
+  max-width: 100%;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+div.doc blockquote {
+  border-left: 4px solid #888;
+  padding-left: 20px;
+}
+div.doc h1,
+div.doc h2,
+div.doc h3,
+div.doc h4,
+div.doc h5 {
+  font-weight: normal;
+}
+div.doc h1:first-child,
+div.doc h2:first-child,
+div.doc h3:first-child,
+div.doc h4:first-child,
+div.doc h5:first-child {
+  margin-top: 0;
+}
+div.doc > h1,
+div.doc > h2 {
+  text-align: left;
+}
+.lecture-mode div.doc > h1,
+.lecture-mode div.doc > h2 {
+  text-align: center;
+  padding: 50px 0;
+}
+div.doc > h1 {
+  text-decoration: undeline;
+}
+div.doc div.markdown {
+  margin-bottom: 15px;
+  /* MathJax corrections */
+  /* End of MathJax corrections */
+}
+div.doc div.markdown:last-child {
+  margin-bottom: 0;
+}
+div.doc div.markdown blockquote {
+  font-size: 100%;
+  color: inherit;
+}
+div.doc div.markdown blockquote:last-child {
+  margin-bottom: 0;
+}
+div.doc div.markdown code {
+  font-size: 85%;
+}
+div.doc div.markdown p:last-child {
+  margin-bottom: 0;
+}
+div.doc div.markdown table {
+  font-size: inherit;
+  width: 100%;
+}
+div.doc div.markdown table th {
+  background: #eee;
+}
+div.doc div.markdown table td,
+div.doc div.markdown table th {
+  border: thin solid #aaa;
+  padding: 3px 5px;
+}
+div.doc div.markdown ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+div.doc div.markdown ul:last-child {
+  margin-bottom: 0px;
+}
+div.doc div.markdown > div > ul li p:last-child,
+div.doc div.markdown > div > ol li p:last-child,
+div.doc div.markdown > div > ul li blockquote:last-child,
+div.doc div.markdown > div > ol li blockquote:last-child,
+div.doc div.markdown > div > ul li ul:last-child,
+div.doc div.markdown > div > ol li ul:last-child,
+div.doc div.markdown > div > ul li ol:last-child,
+div.doc div.markdown > div > ol li ol:last-child {
+  margin-bottom: 20px;
+}
+div.doc div.markdown p > code {
+  padding: 0;
+}
+div.doc div {
+  box-sizing: border-box;
+}
+div.doc div.doc-title {
+  background: #ddd;
+}
+div.doc div.doc-title > h1 {
+  font-family: ETBembo;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0;
+}
+div.doc div.doc-title div.doc-author {
+  padding: 10px;
+  text-align: right;
+}
+div.doc div.doc-title div.doc-author ul {
+  list-style: none;
+}
+div.doc div.doc-title div.doc-author ul li:first-child {
+  font-style: italic;
+  padding-bottom: 4px;
+}
+div.doc div.doc-summary {
+  max-width: 500px;
+  padding: 20px 10px;
+  border-top: 3px solid #aaa;
+  border-bottom: 3px solid #aaa;
+  margin: 20px auto;
+}
+div.doc div.page {
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.doc div.page:last-child {
+  margin-bottom: 0;
+}
+.lecture-mode div.doc div.page {
+  margin-left: auto;
+  margin-right: auto;
+}
+div.doc div.page > div.inner {
+  padding: 20px;
+}
+div.doc div.page > div.inner h1 {
+  font-size: 140%;
+  margin: 10px 0;
+  padding: 0;
+}
+div.doc div.page > div.inner h2 {
+  font-size: 120%;
+  font-style: italic;
+}
+div.doc div.page > div.inner h3 {
+  font-size: 110%;
+  font-style: italic;
+}
+div.doc div.page div.page-element-divider {
+  width: 100%;
+  height: 20px;
+}
+div.doc div.page div.page-number {
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+}
+div.doc div.page div.page-number span.leaf {
+  color: teal;
+  font-size: 150%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+div.doc div.slide {
+  min-height: 200px;
+  padding: 30px;
+}
+div.doc div.slide div.inner {
+  padding: 30px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 24px;
+}
+div.doc div.slide div.inner > h1:first-child {
+  padding: 20px 0;
+}
+div.doc div.slide div.inner .-end-of-slide {
+  display: none;
+}
+div.doc div.page,
+div.doc div.slide {
+  margin-bottom: 30px;
+}
+div.doc div.image.error {
+  color: white;
+  background: crimson;
+  padding: 20px;
+}
+div.doc img.image {
+  max-width: 100%;
+}
+div.doc div.separator {
+  width: 100%;
+  text-align: center;
+  color: teal;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 0.5em 0;
+}
+div.doc div.box {
+  border: thin solid #aaa;
+  padding: 10px;
+  margin: 20px;
+}
+div.doc div.box div.markdown blockquote {
+  border: none;
+}
+div.doc div.banner {
+  text-align: right;
+  font-size: 150%;
+  line-height: 1.5em;
+  padding: 15px 40px;
+  margin: 15px 0;
+  background: #eee;
+}
+div.doc div.banner.-left {
+  text-align: left;
+}
+div.doc div.banner.-center {
+  text-align: center;
+}
+div.doc div.banner h1,
+div.doc div.banner h2,
+div.doc div.banner h3 {
+  color: Firebrick;
+}
+div.doc div.banner p {
+  color: Maroon;
+}
+div.doc div.banner pre {
+  text-align: left;
+  color: Brown;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+div.doc pre.code {
+  position: relative;
+}
+div.doc pre.code.sm {
+  font-size: 75%;
+}
+div.doc pre.code.tiny {
+  font-size: 65%;
+}
+div.doc pre.code.-with-label {
+  padding-top: 30px;
+}
+div.doc pre.code .-code-label {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background: Salmon;
+  color: white;
+  text-shadow: none;
+  padding: 5px;
+}
+div.doc div.note {
+  text-align: right;
+}
+div.doc div.note.sm {
+  font-size: 80%;
+}
+div.doc div.note p {
+  line-height: 1.3em;
+}
+div.doc div.note div.note-inner {
+  text-align: left;
+  display: inline-block;
+  border: thin solid Teal;
+  padding: 3px;
+  padding-left: 10px;
+}
+div.doc div.note div.note-inner pre {
+  border: none;
+  background: none;
+}
+div.doc div.note.-embedded {
+  margin-bottom: 10px;
+}
+div.doc div.note.-embedded div.note-inner {
+  border-bottom: 5px solid Teal;
+}
+div.doc div.note.-embedded.-narrow div.note-inner {
+  max-width: 250px;
+  font-size: 80%;
+}
+div.doc div.note.-embedded.-wide div.note-inner {
+  max-width: 400px;
+}
+div.doc div.note.-side {
+  height: 0px;
+  overflow: visible;
+}
+div.doc div.note.-side div.note-inner {
+  border-left: 4px solid Teal;
+}
+div.doc div.note.-side.-narrow div.note-inner {
+  position: relative;
+  width: 200px;
+  right: -220px;
+}
+div.doc div.note.-side.-wide div.note-inner {
+  position: relative;
+  width: 250px;
+  right: -270px;
+}
+div.doc div.toggle-element {
+  position: relative;
+}
+div.doc div.toggle-element.off {
+  background: #ccc;
+}
+div.doc div.toggle-element > button {
+  font-family: Roboto;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.2s;
+  position: absolute;
+}
+div.doc div.toggle-element > button.off {
+  font-size: 200%;
+  color: Teal;
+  top: 0;
+  left: 0;
+}
+div.doc div.toggle-element > button.on {
+  font-size: 12px;
+  color: teal;
+  top: 0;
+  right: 0;
+}
+div.doc div.toggle-element div.toggle-element-container {
+  transition: all 0.5s;
+  padding: 20px;
+}
+div.doc div.secret {
+  position: relative;
+}
+div.doc div.secret div.lock {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.doc div.secret.unlocked div.lock {
+  color: Teal;
+}
+div.doc div.secret.unlocked div.lock:hover {
+  color: crimson;
+}
+div.doc div.secret.locked {
+  padding: 20px;
+}
+div.doc div.secret.locked div.lock {
+  color: crimson;
+}
+div.doc div.secret.locked p {
+  font-family: Helvetica;
+  font-weight: bold;
+  width: 200px;
+}
+div.doc div.secret.locked input {
+  display: block;
+  width: 200px;
+  margin: 20px 0;
+  padding: 5px;
+}
+div.doc div.secret.locked button {
+  width: 200px;
+}
+div.doc div.rows > div {
+  margin-bottom: 10px;
+}
+div.doc div.row div.column {
+  display: flex;
+}
+div.doc div.row div.column > * {
+  flex: 1;
+}
+div.doc div.codewalk > div.-filename {
+  font-size: 100%;
+  font-family: Roboto;
+  font-weight: bold;
+  border-bottom: 1px solid #888;
+  margin-bottom: 5px;
+}
+div.doc div.codewalk div.-section {
+  display: flex;
+  border-bottom: 1px dashed #ccc;
+}
+div.doc div.codewalk div.-section:last-child {
+  border-bottom: none;
+}
+div.doc div.codewalk div.-section div.-section-text {
+  flex: 1;
+  display: flex;
+  color: Teal;
+  align-items: center;
+  font-size: 0.85em;
+}
+div.doc div.codewalk div.-section div.-section-text > * {
+  flex: 1;
+}
+div.doc div.codewalk div.-section div.-section-code {
+  width: 60%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+div.doc div.codewalk div.-section div.-section-code pre {
+  background: none;
+  border: none;
+  line-height: 1.5em;
+  margin: 0;
+  font-size: 0.7em;
+}
+@media print {
+  .row,
+  .markdown,
+  .pre.code,
+  .box,
+  .slide {
+    page-break-inside: avoid;
+  }
+  blockquote {
+    border-color: transparent;
+  }
+}
+/* ======= Lecturing ======== */
+.lecture-mode {
+  /* Hide the summary */
+}
+.lecture-mode div.doc {
+  font-size: 16pt;
+}
+.lecture-mode div.doc .bookie-target,
+.lecture-mode div.doc > h1,
+.lecture-mode div.doc > h2,
+.lecture-mode div.doc .page > .inner > h1,
+.lecture-mode div.doc .page > .inner > h2 {
+  border: 2px solid transparent;
+  -webkit-transition: all 0.4s;
+}
+.lecture-mode div.doc .bookie-target[alpha="1"],
+.lecture-mode div.doc > h1[alpha="1"],
+.lecture-mode div.doc > h2[alpha="1"],
+.lecture-mode div.doc .page > .inner > h1[alpha="1"],
+.lecture-mode div.doc .page > .inner > h2[alpha="1"] {
+  opacity: 1.0;
+}
+.lecture-mode div.doc .bookie-target[alpha="2"],
+.lecture-mode div.doc > h1[alpha="2"],
+.lecture-mode div.doc > h2[alpha="2"],
+.lecture-mode div.doc .page > .inner > h1[alpha="2"],
+.lecture-mode div.doc .page > .inner > h2[alpha="2"] {
+  opacity: 0.5;
+}
+.lecture-mode div.doc .bookie-target[alpha="3"],
+.lecture-mode div.doc > h1[alpha="3"],
+.lecture-mode div.doc > h2[alpha="3"],
+.lecture-mode div.doc .page > .inner > h1[alpha="3"],
+.lecture-mode div.doc .page > .inner > h2[alpha="3"] {
+  opacity: 0.2;
+}
+.lecture-mode div.doc .bookie-target[alpha="4"],
+.lecture-mode div.doc > h1[alpha="4"],
+.lecture-mode div.doc > h2[alpha="4"],
+.lecture-mode div.doc .page > .inner > h1[alpha="4"],
+.lecture-mode div.doc .page > .inner > h2[alpha="4"] {
+  opacity: 0.05;
+}
+.lecture-mode div.doc .bookie-target.has-highlight,
+.lecture-mode div.doc > h1.has-highlight,
+.lecture-mode div.doc > h2.has-highlight,
+.lecture-mode div.doc .page > .inner > h1.has-highlight,
+.lecture-mode div.doc .page > .inner > h2.has-highlight {
+  opacity: 1.0;
+}
+.lecture-mode div.doc .markdown.bookie-target {
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.lecture-mode div.doc .markdown.bookie-target.lecture-step {
+  border: thin dashed #ddd;
+}
+.lecture-mode div.doc .markdown.bookie-target.has-highlight {
+  border-color: crimson;
+  border-style: solid;
+  background: rgba(255, 249, 51, 0.15);
+}
+.lecture-mode div.doc .markdown.bookie-target.has-highlight strong,
+.lecture-mode div.doc .markdown.bookie-target.has-highlight em {
+  display: inline-block;
+  color: DarkBlue;
+  border-bottom: 4px solid Crimson;
+  margin-bottom: -4px;
+}
+.lecture-mode div.doc pre.has-highlight {
+  border-color: crimson;
+}
+.lecture-mode div.doc .image-holder {
+  border: thin solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.lecture-mode div.doc .image-holder .image,
+.lecture-mode div.doc .image-holder .image-caption {
+  opacity: 0.2;
+}
+.lecture-mode div.doc .image-holder.has-highlight {
+  border-color: crimson;
+}
+.lecture-mode div.doc .image-holder.has-highlight .image,
+.lecture-mode div.doc .image-holder.has-highlight .image-caption {
+  opacity: 1.0;
+}
+.lecture-mode div.doc .codewalk .-filename.has-highlight,
+.lecture-mode div.doc .codewalk .-section.has-highlight {
+  background: rgba(255, 249, 51, 0.15);
+}
+.lecture-mode div.doc h1.has-highlight,
+.lecture-mode div.doc h2.has-highlight {
+  color: Crimson;
+  text-shadow: 0px 0px 15px Yellow;
+  text-decoration: underline solid Crimson;
+}
+.lecture-mode div.doc div.slide {
+  opacity: 0.5;
+}
+.lecture-mode div.doc div.slide > div.inner {
+  font-size: 30px;
+  position: relative;
+}
+.lecture-mode div.doc div.slide.has-focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+  opacity: 1.0;
+  background: black;
+}
+.lecture-mode div.doc div.slide.has-focus > div.inner {
+  flex: 1;
+}
+.lecture-mode div.doc div.slide.has-focus .lecture-step {
+  opacity: 1.0;
+}
+.lecture-mode div.doc div.slide.has-focus .-end-of-slide {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transition: all 0.5s;
+  opacity: 0.2;
+  color: Crimson;
+}
+.lecture-mode div.doc div.slide.has-focus .-end-of-slide.has-highlight {
+  opacity: 1.0;
+  transform: scale(2);
+}
+.lecture-mode div.children {
+  display: none;
+}
+.lecture-mode div.note.-sidenote {
+  display: none;
+}
+.lecture-mode #notebook-container {
+  width: 100%;
+}
+.lecture-mode #notebook-container .cell {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  border-left: 5px solid transparent;
+}
+.lecture-mode #notebook-container .cell.has-highlight {
+  border-left: 5px solid red;
+}

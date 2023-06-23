@@ -1,0 +1,219 @@
+<html>
+  <!-- Mirrored from db.science.uoit.ca/library/teaching by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Apr 2020 22:25:06 GMT -->
+  <!-- Added by HTTrack -->
+  <meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1"
+    />
+    <link rel="icon" href="static/favicon.png" />
+    <title>teaching</title>
+    <link
+      rel="stylesheet"
+      href="static/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="static/css/fonts/fonts.css" />
+    <link rel="stylesheet" href="static/prism/prism.css" />
+    <link rel="stylesheet" href="static/client/css/app.css" />
+    <link rel="stylesheet" href="static/client/css/bookie.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div id="app-resources" style="display: none;">
+      <ul>
+        <li><a href="./index.clj">index.clj</a></li>
+        <li>
+          <a href="./scientific-data-analysis/index.html"
+            >scientific-data-analysis/index.clj</a
+          >
+        </li>
+        <li>
+          <a href="./machine-learning/index.html">machine-learning/index.clj</a>
+        </li>
+        <li>
+          <a href="./programming-languages/index.html"
+            >programming-languages/index.clj</a
+          >
+        </li>
+        <li>
+          <a href="./compilers/dragon-book.html">compilers/dragon-book.jpg</a>
+        </li>
+        <li>
+          <a href="./compilers/antlr-book.html">compilers/antlr-book.png</a>
+        </li>
+        <li><a href="./compilers/index.html">compilers/index.clj</a></li>
+      </ul>
+    </div>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        elements: [],
+        skipStartupTypeset: true,
+        /*
+        "HTML-CSS": {
+            scale: 83,
+        },
+        */
+        //showMathMenu: false,
+        //zoom: "None",
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true,
+          skipTags: ["script",
+          "noscript",
+          "style",
+          "textarea",
+          "nomath",
+          //"pre",
+          ],
+          // nomathjax used by (code ...) component
+          ignoreClass: "nomath|nomathjax|tex2jax_ignore",
+        },
+        /*
+        TeX: {
+            equationNumbers: {autoNumber: "AMS"},
+        },
+        */
+      });
+    </script>
+    <script>
+      (function () {
+        var throttle = function (type, name, obj) {
+          obj = obj || window;
+          var running = false;
+          var func = function () {
+            if (running) {
+              return;
+            }
+            running = true;
+            requestAnimationFrame(function () {
+              obj.dispatchEvent(new CustomEvent(name));
+              running = false;
+            });
+          };
+          obj.addEventListener(type, func);
+        };
+        throttle("resize", "__resize__");
+        throttle("scroll", "__scroll__");
+      })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="../../www.googletagmanager.com/gtag/js87a6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-52618243-2");
+    </script>
+
+    <!--
+Prism from CDN does not come with line number plugin
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+-->
+    <script src="static/prism/prism.js"></script>
+    <script src="static/prism/prism-extension.js"></script>
+    <script src="static/client/main.js"></script>
+
+    <script>
+      var sitemap = {
+        "": {
+          children: [
+            "compilers",
+            "machine-learning",
+            "programming-languages",
+            "scientific-data-analysis",
+          ],
+          content:
+            '{:title "Ken\u0027s Teaching Materials"\n :release true\n :categories [:section]\n :summary #md {{{ \n                Lecture slides, supplementary notes, sample programs and practice exercises\n                will be posted here for the courses I teach at Ontario Tech University.\n                }}}\n}\n\n; (page (rows 4 8\n;             (:div (:h1 "Keeping students happy")\n;                   #md {{{\n;                       This is a clip from the 1973 movie, _The Paper Chase_, starring John Houseman\n;                       who plays a Harvard Law professor.\n;                       }}})\n;                   (html {{{\n;                            \u003ccenter\u003e\n;                            \u003ciframe src="https://player.vimeo.com/video/232932966" \n;                            width="320" \n;                            height="280" \n;                            frameborder="0" \n;                            webkitallowfullscreen \n;                            mozallowfullscreen \n;                            allowfullscreen\u003e\u003c/iframe\u003e\n;                            \u003c/center\u003e\n;                         }}})\n; \n;            (:h1 "Study Guide")\n;            #md {{{\n;                   - All course notes will be provided on this Web site.\n;                   - The posted course notes notes are not self-containing.  This\n;                   means that students are expected to supplement the course\n;                   notes with the material presented *during* the lectures.\n;                }}}))\n',
+          istop: false,
+          path: "",
+        },
+        compilers: {
+          children: [
+            "compilers/00.introduction",
+            "compilers/01.lexer",
+            "compilers/02.grammars",
+            "compilers/03.topdown-parsing",
+            "compilers/05.grammar-design",
+            "compilers/06.interpreters",
+            "compilers/07.compiler",
+          ],
+          content:
+            '{:title "Compilers"\n :categories [:course]\n :label "4020"\n :rank "9999"\n :summary #md {{{\n                 This course provides a detailed study of the compilation\n                 process for a procedural language. Students will develop an\n                 understanding of compiler design and put these principles into\n                 practice through the construction of a fully functioning\n                 compiler for a small procedural language using widely available\n                 tools for compiler construction and a general-purpose\n                 programming language.\n                 }}}}\n\n(page (:h1 "About this course") \n      (row 6 3 3\n           #md {{{ \n                  The lecture notes will largely follow the textbook of this course.\n                  }}}\n           (image "dragon-book.jpg")\n           (image "antlr-book.png"\n                  #md {{{ Strongly recommended }}}))\n      ); page\n',
+          istop: true,
+          path: "compilers",
+        },
+        "machine-learning": {
+          children: [
+            "machine-learning/calculus",
+            "machine-learning/convolutional-layers",
+            "machine-learning/cross-validation",
+            "machine-learning/embedding",
+            "machine-learning/func-vector-space",
+            "machine-learning/intro",
+            "machine-learning/kernel-methods",
+            "machine-learning/neural-networks",
+            "machine-learning/regulation",
+            "machine-learning/representations",
+            "machine-learning/sequence-learning",
+            "machine-learning/tensorflow",
+            "machine-learning/tensorflow-regression",
+            "machine-learning/tensors",
+            "machine-learning/vector-spaces",
+          ],
+          content:
+            '{:title "Machine Learning"\n :rank "4050"\n :label "4050"\n :categories [:course]\n :summary #md {{{\n                 Machine learning is a branch of Computer Science that enables machines to identify patterns, make predictions and organize data by synthesizing models of the world through learning.  In this course, we will cover the theory and application of machine learning.  We will provide a survey of the fundamental building blocks of machine learning covering areas such as general probabilistic models and parameter estimation, regression models, statistical data analysis, neural networks and neural computation.\n              }}}\n}\n',
+          istop: true,
+          path: "machine-learning",
+        },
+        "programming-languages": {
+          children: [
+            "programming-languages/1-computation",
+            "programming-languages/2-Clojure",
+            "programming-languages/3-Scala",
+          ],
+          content:
+            '{:title "Programming Languages"\n :status "3055"\n ; :cover "cover.jpg"\n :rank "3055"\n :categories ["course"]\n :summary #md {{{\n                This course covers the foudation and design principles of\n                different programming languages.  We will survey several programming\n                paradigms and their respective representative languages.\n\n                Students will gain working knowledge of selected languagse to\n                appreciate the hyperproductivity of selecting the _right_ language\n                for the type of computational tasks at hand.\n              }}}\n}\n\n',
+          istop: true,
+          path: "programming-languages",
+        },
+        "scientific-data-analysis": {
+          children: [
+            "scientific-data-analysis/automation",
+            "scientific-data-analysis/env",
+            "scientific-data-analysis/githubclassroom",
+            "scientific-data-analysis/intro",
+            "scientific-data-analysis/numerical_python",
+            "scientific-data-analysis/pandas",
+            "scientific-data-analysis/python",
+            "scientific-data-analysis/versioning",
+          ],
+          content:
+            '{:title " Scientific Data Analysis"\n :label "2000"\n :rank "2000"\n :categories ["course"]\n :summary #md {{{\n           The principal goal of this course is to build computational skills\n           required for analyzing scientific data in a variety of data formats\n           (e.g. CSV, text, binary, sound, image, etc.). Topics include:\n           automation of data analysis tasks using command-line user interfaces\n           (e.g., the Unix shell); managing code and data using a version\n           control system; modular programming for scientific data analysis;\n           debugging and testing scientific software; plotting data (i.e., two-\n           and three-dimensional graphics.)\n                 }}}\n }\n',
+          istop: true,
+          path: "scientific-data-analysis",
+        },
+      };
+      var root_path = "./";
+      var reload_path = window.origin + root_path;
+      console.log("app.core.main()");
+      app.core.main();
+    </script>
+  </body>
+
+  <!-- Mirrored from db.science.uoit.ca/library/teaching by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Apr 2020 22:25:28 GMT -->
+</html>

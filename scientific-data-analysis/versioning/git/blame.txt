@@ -1,0 +1,17 @@
+85253c6f (Ken Pu            2019-06-26 02:10:00 -0400 609)              It shows the commit (and author) that is
+85253c6f (Ken Pu            2019-06-26 02:10:00 -0400 610)              responsible for every line of the file.
+85253c6f (Ken Pu            2019-06-26 02:10:00 -0400 611)              }}}
+00000000 (Not Committed Yet 2019-06-26 02:10:14 -0400 612) 
+00000000 (Not Committed Yet 2019-06-26 02:10:14 -0400 613)       (:h2 "An example")
+00000000 (Not Committed Yet 2019-06-26 02:10:14 -0400 614)       #md {{{
+00000000 (Not Committed Yet 2019-06-26 02:10:14 -0400 615)              }}}
+85253c6f (Ken Pu            2019-06-26 02:10:00 -0400 616)       )
+85253c6f (Ken Pu            2019-06-26 02:10:00 -0400 617) 
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 618) (page (:h1 "Working with versioned files")
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 619)       #md {{{
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 620)              - git checkout
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 621)              - git reset
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 622)              - git blame
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 623)              }}}
+26ec595b (Ken Pu            2019-06-19 13:20:55 -0400 624)       )
+

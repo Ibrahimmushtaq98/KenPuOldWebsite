@@ -206,16 +206,6 @@ throttle("scroll", "__scroll__");
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     -->
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52618243-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
-        gtag('js', new Date()); 
-        gtag('config', 'UA-52618243-2');
-    </script>
-
-
 <!--
 Prism from CDN does not come with line number plugin
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
@@ -377,7 +367,7 @@ Prism from CDN does not come with line number plugin
                     "path": "07.compiler/programming-bytecode"
                 }
             };
-    var root_path = "db.science.uoit.ca/library/compilers/";
+    var root_path = "./compilers/";
     var reload_path = window.origin + root_path;
     console.log("app.core.main()");
     app.core.main();
